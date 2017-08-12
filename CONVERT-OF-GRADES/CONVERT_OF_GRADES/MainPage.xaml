@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CONVERT_OF_GRADES"
+             x:Class="CONVERT_OF_GRADES.MainPage">
+
+    <StackLayout  Padding="30,10,10,10">
+        <Label 
+         FontSize="Large" 
+        Text ="CONVERT OF GRADES" 
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" >
+        </Label>
+
+        <Label 
+         FontSize="Large" 
+         Text="Enter a value" >
+        </Label>
+
+        <Entry  
+             x:Name="GradosEntry" 
+             FontSize="Medium" 
+             Placeholder="Enter a value" 
+             PlaceholderColor="Aqua" 
+             Keyboard="Numeric"  >
+        </Entry>
+
+
+        
+        
+        
+            
+            <Label 
+         FontSize="Large" 
+         Text="Convert to:" >
+            </Label>
+
+            <Button  
+                x:Name=" FahrennheitButton " 
+             Text="Convert to Fahrennhei">
+        </Button>
+
+        <Button  
+                x:Name=" CelsiusButton " 
+             Text="Convert to Celsius">
+        </Button>
+
+
+
+       
+        <Entry  
+             x:Name="FahrennheitEntry" 
+             FontSize="Medium" 
+             IsEnabled="False" 
+             Placeholder="Value in grades Fahrennheit" 
+             PlaceholderColor="Black" >
+        </Entry>
+
+
+        <Label 
+         FontSize="Large" 
+         Text="Es equal to:" >
+        </Label>
+        
+        
+        <Entry x:Name="CelsiusEntry" 
+             FontSize="Medium" 
+             IsEnabled="False" 
+             Placeholder="Value in grades Celsius" 
+             PlaceholderColor="Black" >
+        </Entry>
+
+       
+    </StackLayout>
+
+
+</ContentPage>
